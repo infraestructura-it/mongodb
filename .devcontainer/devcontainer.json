@@ -1,0 +1,16 @@
+{
+    "name": "MongoDB Codespace",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/docker:1": {},
+        "ghcr.io/devcontainers/features/mongodb:1": {}
+    },
+    "postCreateCommand": "sudo service mongod start",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    }
+}
